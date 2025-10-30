@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buat Rina 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #333;
+    }
+    .card {
+      background: #fff;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      max-width: 400px;
+      animation: fadeIn 1.5s ease;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    button {
+      background: #ff6b81;
+      border: none;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff4d6d;
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hai Rina 💐</h1>
+    <p>Aku cuma mau bilang sesuatu yang udah lama aku simpan...</p>
+    <p><strong>Rina, aku suka sama kamu ❤️</strong></p>
+    <p>Mau nggak kamu jadi pacarku?</p>
+    <button onclick="yes()">Ya 💞</button>
+    <button onclick="no()">Nanti dulu 🙈</button>
+  </div>
+
+  <script>
+    function yes() {
+      document.body.innerHTML = `
+        <div class="card">
+          <h1>yeeay 😍 kita resmi ya!</h1>
+          <p>Terima kasih Rina udah mau sama aku 💖</p>
+        </div>
+      `;
+    }
+    function no() {
+      document.body.innerHTML = `
+        <div class="card">
+          <h1>😢</h1>
+          <p>Gapapa... aku tetap suka sama kamu, Rina 💔</p>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
